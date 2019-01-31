@@ -5,19 +5,85 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<title>Stone Resource Group</title>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
 	 crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 
 </head>
 
 <body>
+
+	<div class="container">
+		<nav class="navbar navbar-light navbar-expand-lg">
+			<a class="navbar-brand" href="#">
+				<img src="assets/logo.png" alt="">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Career</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Our Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Consultants</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact Us</a>
+					</li>
+				</ul>
+				<div class="call">
+					<a href="">
+						<img src="assets/phone.png" alt="" class="img-fluid">
+					</a>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="banner">
+		<img class="img-fluid" src="assets/banners/banner_service.png" alt="service-banner-image">
+	</div>
+
 	<main>
-		
+		<div class="container my-5 text-center">
+			<h1 class="font-weight-bold soft-black">Services We Provides</h1>
+			<p class="w-75 mx-auto text-muted lh-1e7">Looking to outsource your project to a team of highly qualified
+				professionals? Look no further. We can help ensure that you meet your project deadlines and budget while
+				maintaining the highest level of quality.</p>
+		</div>
+
+		<div class="container text-center services">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="card border-0">
+						<img class="card-img-top img-fluid mx-auto" src="assets/services/service_1.png" alt="Service 1">
+						<div class="card-body p-0">
+							<h5 class="card-title soft-black font-weight-bold">IT Consulting</h5>
+							<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, error! Ipsum vero hic iure, veritatis minus vel porro aspernatur eligendi?</p>
+							<a href="#" class="btn btn-primary px-3">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -27,4 +93,5 @@
 	 crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 </body>
+
 </html>
