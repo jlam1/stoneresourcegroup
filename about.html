@@ -17,57 +17,69 @@
 
 <body>
 
-	<div class="container">
-		<nav class="navbar navbar-light navbar-expand-lg">
-			<a class="navbar-brand" href="#">
-				<img src="assets/logo.png" alt="">
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-			 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link border-0" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link border-0" href="#">About Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link border-0" href="#">Career</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link border-0" href="#">Our Services</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link border-0" href="#">Consultants</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link border-0" href="#">Contact Us</a>
-					</li>
-				</ul>
-			</div>
-			<div class="call">
-				<a href="">
-					<img src="assets/phone.svg" alt="" class="img-fluid">
+	<header class="navbar-main fixed-top">
+		<div class="container">
+			<nav class="navbar navbar-light navbar-expand-md">
+				<a class="navbar-brand" href="index.html">
+					<img src="assets/logo.png" alt="">
 				</a>
-			</div>
-		</nav>
-	</div>
 
-	<div class="banner">
-		<img class="img-fluid w-100" src="assets/banners/banner_service.png" alt="service-banner-image">
-	</div>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link border-0" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link border-0" href="about.html">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link border-0" href="career.html">Career</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link border-0" href="services.html">Our Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link border-0" href="consultant.html">Consultants</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link border-0" href="contact.html">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="call d-flex align-items-center ml-md-4">
+					<a href="#">
+						<img src="assets/phone.svg" alt="" class="img-fluid">
+					</a>
+					<div class="call-info ml-2">
+						<span class="d-block font-weight-bold">678-279-5834</span>
+						<span class="small d-block text-muted">The call is free</span>
+					</div>
+				</div>
+
+				<button class="navbar-toggler border-0 p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</nav>
+		</div>
+	</header>
 
 	<main class="about">
+		<div class="banner">
+			<img class="img-fluid w-100" src="assets/banners/banner_about.png" alt="service-banner-image">
+		</div>
 		<div class="container my-5">
 			<div class="row">
 				<div class="col-md-6">
 					<h1 class="ff-perpetua font-weight-bold header pb-2">About Stone Resource Group</h1>
-					<p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium nulla ea culpa quis labore ducimus eligendi voluptatum sequi maxime perspiciatis nobis quia odit neque minus ab officiis architecto amet beatae sint voluptatem, itaque debitis provident? Expedita illo corrupti dolore magni qui libero? Laudantium, cupiditate. Doloribus provident accusantium veniam at sint?</p>
-					<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore repellat atque, dolores voluptates aspernatur eum? Eligendi cupiditate autem, animi eum laborum rem mollitia, suscipit, reiciendis dolores veniam laboriosam accusantium nemo!</p>
+					<p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium nulla ea culpa quis
+						labore ducimus eligendi voluptatum sequi maxime perspiciatis nobis quia odit neque minus ab officiis architecto
+						amet beatae sint voluptatem, itaque debitis provident? Expedita illo corrupti dolore magni qui libero?
+						Laudantium, cupiditate. Doloribus provident accusantium veniam at sint?</p>
+					<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore repellat atque, dolores
+						voluptates aspernatur eum? Eligendi cupiditate autem, animi eum laborum rem mollitia, suscipit, reiciendis
+						dolores veniam laboriosam accusantium nemo!</p>
 					<p class="color-secondary font-weight-bold">STONE is a minority certified supplier: MBE AT01880</p>
 				</div>
 				<div class="col-md-6">
@@ -79,10 +91,13 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="values bg-secondary py-5">
 			<h2 class="font-weight-bold ff-perpetua text-center text-light">Our Mission And Culture</h2>
-			<p class="w-75 mx-auto text-light text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure iusto dolores, nam est quae facilis sequi sint obcaecati incidunt corporis amet veritatis enim, cumque minima? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore deleniti tenetur maiores quisquam similique soluta necessitatibus perspiciatis provident, deserunt voluptatum.</p>
+			<p class="w-75 mx-auto text-light text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure iusto
+				dolores, nam est quae facilis sequi sint obcaecati incidunt corporis amet veritatis enim, cumque minima? Lorem
+				ipsum dolor sit, amet consectetur adipisicing elit. Inventore deleniti tenetur maiores quisquam similique soluta
+				necessitatibus perspiciatis provident, deserunt voluptatum.</p>
 
 			<div class="container my-5">
 				<div class="row">
@@ -90,7 +105,8 @@
 						<div class="value-wrapper text-center">
 							<img src="assets/about/mc_1.png" alt="" class="img-fluid mb-2">
 							<h3 class="ff-perpetua font-weight-bold mb-2">Work Ethic</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus exercitationem placeat iste at repellendus tempore?</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus exercitationem placeat iste at repellendus
+								tempore?</p>
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-3 my-3">
@@ -104,14 +120,16 @@
 						<div class="value-wrapper text-center">
 							<img src="assets/about/mc_3.png" alt="" class="img-fluid mb-2">
 							<h3 class="ff-perpetua font-weight-bold mb-2">Work Ethic</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus exercitationem placeat iste at repellendus tempore? Lorem ipsum dolor sit amet.</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus exercitationem placeat iste at repellendus
+								tempore? Lorem ipsum dolor sit amet.</p>
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-3 my-3">
 						<div class="value-wrapper text-center">
 							<img src="assets/about/mc_4.png" alt="" class="img-fluid mb-2">
 							<h3 class="ff-perpetua font-weight-bold mb-2">Work Ethic</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus exercitationem placeat iste at repellendus tempore?</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus exercitationem placeat iste at repellendus
+								tempore?</p>
 						</div>
 					</div>
 				</div>
@@ -121,22 +139,31 @@
 		<div class="donations container">
 			<div class="my-5 text-center">
 				<h2 class="font-weight-bold ff-perpetua mb-3">Giving Back.</h2>
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo nisi ab atque illum quasi alias, impedit magnam ipsam labore aliquid facilis pariatur vero reiciendis perspiciatis quia reprehenderit nesciunt earum corrupti! Deleniti non numquam vel sequi, blanditiis fuga expedita quos doloremque earum aliquam ea libero optio aperiam rem culpa, officiis sit!</p>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo nisi ab atque illum quasi alias, impedit magnam
+					ipsam labore aliquid facilis pariatur vero reiciendis perspiciatis quia reprehenderit nesciunt earum corrupti!
+					Deleniti non numquam vel sequi, blanditiis fuga expedita quos doloremque earum aliquam ea libero optio aperiam rem
+					culpa, officiis sit!</p>
 
 				<div class="container mt-5 py-5">
 					<div class="row">
 						<div class="col-md-6 my-5">
 							<div class="donate-wrapper pb-3 px-4">
 								<img src="assets/about/donate_logo_1.png" alt="" class="img-fluid px-3">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, id doloremque! Aperiam perspiciatis quos quod minus in eius! Omnis rem nulla ipsum provident quidem similique velit nihil dolores fugit. Corrupti alias iusto itaque. Maxime voluptate facere quaerat doloremque voluptatibus soluta cupiditate quis, quasi, quo quidem accusantium! Sit minima non quaerat?</p>
-								<a href="#" class="btn ff-perpetua px-4 py-2 font-weight-bold">To Learn More</a>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, id doloremque! Aperiam perspiciatis
+									quos quod minus in eius! Omnis rem nulla ipsum provident quidem similique velit nihil dolores fugit. Corrupti
+									alias iusto itaque. Maxime voluptate facere quaerat doloremque voluptatibus soluta cupiditate quis, quasi, quo
+									quidem accusantium! Sit minima non quaerat?</p>
+								<a href="#" class="btn px-4 py-2 border-0 ff-perpetua font-weight-bold custom-btn">To Learn More</a>
 							</div>
 						</div>
 						<div class="col-md-6 my-5">
 							<div class="donate-wrapper pb-3 px-4">
 								<img src="assets/about/donate_logo_2.png" alt="" class="img-fluid px-3">
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, id doloremque! Aperiam perspiciatis quos quod minus in eius! Omnis rem nulla ipsum provident quidem similique velit nihil dolores fugit. <br><br> Corrupti alias iusto itaque. Maxime voluptate facere quaerat doloremque voluptatibus soluta cupiditate quis, quasi, quo quidem accusantium! Sit minima non quaerat?</p>
-								<a href="#" class="btn ff-perpetua px-4 py-2 font-weight-bold">To Learn More</a>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, id doloremque! Aperiam perspiciatis
+									quos quod minus in eius! Omnis rem nulla ipsum provident quidem similique velit nihil dolores fugit. <br><br>
+									Corrupti alias iusto itaque. Maxime voluptate facere quaerat doloremque voluptatibus soluta cupiditate quis,
+									quasi, quo quidem accusantium! Sit minima non quaerat?</p>
+								<a href="#" class="btn px-4 py-2 border-0 ff-perpetua font-weight-bold custom-btn">To Learn More</a>
 							</div>
 						</div>
 					</div>
@@ -151,43 +178,53 @@
 					<ul class="list-unstyled">
 						<li>
 							<img src="assets/about/aff_1.png" alt="" class="img-fluid p-3">
-							<blockquote><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam exercitationem delectus sapiente rem saepe repudiandae.</i></blockquote>
+							<blockquote><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam exercitationem delectus
+									sapiente rem saepe repudiandae.</i></blockquote>
 						</li>
 						<li>
 							<img src="assets/about/aff_1.png" alt="" class="img-fluid p-3">
-							<blockquote><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam exercitationem delectus sapiente rem saepe repudiandae.</i></blockquote>
+							<blockquote><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam exercitationem delectus
+									sapiente rem saepe repudiandae.</i></blockquote>
 						</li>
 						<li>
 							<img src="assets/about/aff_1.png" alt="" class="img-fluid p-3">
-							<blockquote><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam exercitationem delectus sapiente rem saepe repudiandae.</i></blockquote>
+							<blockquote><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam exercitationem delectus
+									sapiente rem saepe repudiandae.</i></blockquote>
 						</li>
 						<li>
 							<img src="assets/about/aff_1.png" alt="" class="img-fluid p-3">
-							<blockquote><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam exercitationem delectus sapiente rem saepe repudiandae.</i></blockquote>
+							<blockquote><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam exercitationem delectus
+									sapiente rem saepe repudiandae.</i></blockquote>
 						</li>
 						<li>
 							<img src="assets/about/aff_1.png" alt="" class="img-fluid p-3">
-							<blockquote><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam exercitationem delectus sapiente rem saepe repudiandae.</i></blockquote>
+							<blockquote><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam exercitationem delectus
+									sapiente rem saepe repudiandae.</i></blockquote>
 						</li>
 						<li>
 							<img src="assets/about/aff_1.png" alt="" class="img-fluid p-3">
-							<blockquote><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam exercitationem delectus sapiente rem saepe repudiandae.</i></blockquote>
+							<blockquote><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam exercitationem delectus
+									sapiente rem saepe repudiandae.</i></blockquote>
 						</li>
 						<li>
 							<img src="assets/about/aff_1.png" alt="" class="img-fluid p-3">
-							<blockquote><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam exercitationem delectus sapiente rem saepe repudiandae.</i></blockquote>
+							<blockquote><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam exercitationem delectus
+									sapiente rem saepe repudiandae.</i></blockquote>
 						</li>
 						<li>
 							<img src="assets/about/aff_1.png" alt="" class="img-fluid p-3">
-							<blockquote><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam exercitationem delectus sapiente rem saepe repudiandae.</i></blockquote>
+							<blockquote><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam exercitationem delectus
+									sapiente rem saepe repudiandae.</i></blockquote>
 						</li>
 						<li>
 							<img src="assets/about/aff_1.png" alt="" class="img-fluid p-3">
-							<blockquote><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam exercitationem delectus sapiente rem saepe repudiandae.</i></blockquote>
+							<blockquote><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam exercitationem delectus
+									sapiente rem saepe repudiandae.</i></blockquote>
 						</li>
 						<li>
 							<img src="assets/about/aff_1.png" alt="" class="img-fluid p-3">
-							<blockquote><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam exercitationem delectus sapiente rem saepe repudiandae.</i></blockquote>
+							<blockquote><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam exercitationem delectus
+									sapiente rem saepe repudiandae.</i></blockquote>
 						</li>
 					</ul>
 				</div>
@@ -218,7 +255,7 @@
 							<li class="text-white mb-2">
 								<span class="fa-li">
 									<i class="fa fa-envelope-o mr-2" aria-hidden="true"></i>
-								</span>class="email" 
+								</span>
 								<a href="mailto:atlanta@stoneresource.net">atlanta@stoneresource.net</a>
 							</li>
 							<li class="text-white mb-2">
@@ -246,7 +283,7 @@
 							<li class="text-white mb-2">
 								<span class="fa-li">
 									<i class="fa fa-envelope-o mr-2" aria-hidden="true"></i>
-								</span>class="email" 
+								</span>
 								<a href="mailto:atlanta@stoneresource.net">atlanta@stoneresource.net</a>
 							</li>
 							<li class="text-white mb-2">
@@ -274,7 +311,7 @@
 							<li class="text-white mb-2">
 								<span class="fa-li">
 									<i class="fa fa-envelope-o mr-2" aria-hidden="true"></i>
-								</span>class="email" 
+								</span>
 								<a href="mailto:atlanta@stoneresource.net">atlanta@stoneresource.net</a>
 							</li>
 							<li class="text-white mb-2">

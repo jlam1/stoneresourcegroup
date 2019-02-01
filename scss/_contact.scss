@@ -1,0 +1,106 @@
+.contact {
+	h1 {
+		font-size: 3em;
+	}
+	ul.nav {
+		li.nav-item {
+			a.nav-link {
+				h3 {
+					font-size: 1.8em;
+					font-weight: bold;
+					color: $soft-black;
+				}
+				border: 2px solid #fff;
+			}
+			a.nav-link.active {
+				position: relative;
+				border-bottom: 2px solid $blue;
+				h3 {
+					color: $blue;
+				}
+			}
+			a.nav-link.active:after, a.nav-link.active:before {
+				bottom: 0;
+				left: 50%;
+				border: solid transparent;
+				content: " ";
+				height: 0;
+				width: 0;
+				position: absolute;
+				pointer-events: none;
+			}
+			
+			a.nav-link.active:after {
+				border-color: rgba(136, 183, 213, 0);
+				border-width: 30px;
+				margin-left: -30px;
+			}
+			a.nav-link.active:before {
+				border-color: rgba(194, 225, 245, 0);
+				border-bottom-color: #032956;
+				border-width: 8px;
+				margin-left: -8px;
+			}
+		}
+	}
+	form {
+		input, select, textarea {
+			background-color: #f2f4f7;
+			border: none;
+			border-radius: 15px;
+			font-size: 1.1em;
+		}
+		textarea {
+			resize: none;
+		}
+		button {
+			border: 0;
+			font-size: 1.5em;
+			background-color: #7a7a7a;
+			border-radius: 25px;
+			color: #fff;
+			transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+			background-image: linear-gradient(to right, #072e5b, #77a7df 50%, #7a7a7a 25%);
+			background-size: 200% 100%;
+			background-position: 100%;
+		}
+		
+		button:hover {
+			transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+			background-position: 0%;
+		}
+	}
+	.locations {
+		background-color: #be9133;
+		.maps {
+			.card {
+				.card-body {
+					h5.name {
+						color: #3f3f3f;
+					}
+					span, p, a {
+						color: #6b6b6b;
+					}
+					a.email {
+						color: $blue;
+						text-decoration: underline;
+					}
+				}
+			}
+			iframe {
+				width: 100%;
+			}
+		}
+	}
+	@media screen and (max-width: $break-md) {
+		ul.nav {
+			li.nav-item {
+				a.nav-link {
+					h3 {
+						font-size: 1em;
+					}
+				}
+			}
+		}
+	}
+}

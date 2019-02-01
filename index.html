@@ -10,90 +10,224 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
 	 crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 
 </head>
 
 <body>
 
-	<div class="container">
-		<nav class="navbar navbar-light navbar-expand-lg">
-			<a class="navbar-brand" href="#">
-				<img src="assets/logo.png" alt="">
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-			 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link border-0" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link border-0" href="#">About Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link border-0" href="#">Career</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link border-0" href="#">Our Services</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link border-0" href="#">Consultants</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link border-0" href="#">Contact Us</a>
-					</li>
-				</ul>
-			</div>
-			<div class="call">
-				<a href="">
-					<img src="assets/phone.svg" alt="" class="img-fluid">
+	<header class="navbar-main fixed-top">
+		<div class="container">
+			<nav class="navbar navbar-light navbar-expand-md">
+				<a class="navbar-brand order-1" href="index.html">
+					<img src="assets/logo.png" alt="">
 				</a>
-			</div>
-		</nav>
-	</div>
+
+				<div class="call d-flex align-items-center ml-md-4 order-2 order-sm-3">
+					<a href="#">
+						<img src="assets/phone.svg" alt="" class="img-fluid">
+					</a>
+					<div class="call-info ml-2">
+						<span class="d-block font-weight-bold">678-279-5834</span>
+						<span class="small d-block text-muted">The call is free</span>
+					</div>
+				</div>
+
+				<div class="collapse navbar-collapse order-3 order-sm-2" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-sm-0 ml-md-auto">
+						<li class="nav-item active">
+							<a class="nav-link border-0" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link border-0" href="about.html">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link border-0" href="career.html">Career</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link border-0" href="services.html">Our Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link border-0" href="consultant.html">Consultants</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link border-0" href="contact.html">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+
+				<button class="navbar-toggler border-0 p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				   <span class="navbar-toggler-icon"></span>
+			   </button>
+			</nav>
+		</div>
+	</header>
 
 	<main class="home">
-		<section class="section-1 bg-primary py-5">
-			<div class="container">
-				<h2 class="ff-perpetua font-weight-bold text-center text-light">Our Proprietary Assessment leads to World-class
-					hires</h2>
-				<p class="text-muted text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo odit omnis
-					quisquam laboriosam et maxime minus sunt, ratione voluptate expedita assumenda beatae nemo esse harum quos magni,
-					officiis adipisci repudiandae.</p>
+
+		<section class="top">
+			<div class="wrapper text-center">
+				<h5 class="subheader m-0">ARE YOU THE MISSING PIECE?</h5>
+				<h1 class="header font-weight-bold mt-1 mb-0">Stone Always Seeking Top Talent</h1>
+				<p class="blurb small text-muted mb-4">STONE Resource Group is to provides quality solutions for clients</p>
+				<a href="#" class="btn px-5 py-3 border-0 ff-perpetua font-weight-bold custom-btn">Join Our Team</a>
 			</div>
 		</section>
 
-		<section class="section-2 py-5 position-relative">
+		<section class="section-1 bg-primary">
+			<div class="container">
+				<div class="position-relative wrapper">
+					<h2 class="ff-perpetua font-weight-bold text-center text-light">Our Proprietary Assessment leads to World-class
+						hires</h2>
+					<p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo odit omnis quisquam
+						laboriosam et maxime minus sunt, ratione voluptate expedita assumenda beatae nemo esse harum quos magni, officiis
+						adipisci repudiandae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ducimus! Saepe
+						similique corrupti labore quas, id aliquam natus voluptas, nam dolorem illo repellendus adipisci libero!</p>
+					<img src="assets/homepage/circle_logo.png" alt="" class="img-fluid mx-auto text-center circle-logo">
+				</div>
+			</div>
 			<div class="circle-wrapper">
 				<span class="circle-1"></span>
 				<span class="circle-2"></span>
 			</div>
+		</section>
+
+		<section class="section-2 position-relative">
+			<img src="assets/homepage/curve_right.png" alt="" class="img-fluid curve curve-right">
 			<div class="container">
-				<h2 class="ff-perpetua font-weight-bold text-center">We Service A Wide Range Of Industried</h2>
+				<h2 class="ff-perpetua font-weight-bold text-center header">We Service A Wide Range Of Industried</h2>
 				<p class="text-center">Lorem ipsum dolor sit amet.</p>
 				<div class="row">
 					<div class="col-md-4">
 						<div class="card py-3 text-center border-0">
-							<img class="card-img-top img-fluid mx-auto" src="assets/services/service_1.png" alt="Service 1">
+							<div class="img-wrapper mb-3">
+								<img class="card-img-top img-fluid mx-auto" src="assets/homepage/service_it_consulting.png" alt="Service 1">
+							</div>
 							<div class="card-body p-0">
 								<h5 class="card-title soft-black font-weight-bold ff-perpetua">IT Consulting</h5>
-								<p class="card-text mx-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, error! Ipsum vero hic
+								<p class="card-text w-75 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, error! Ipsum
+									vero hic
 									iure,
 									veritatis minus vel porro aspernatur eligendi?</p>
 								<div class="card-footer border-0">
-									<a href="#" class="btn btn-primary px-4 border-0 ff-perpetua">Read More</a>
+									<a href="#" class="px-4 border-0 ff-perpetua">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card py-3 text-center border-0">
+							<div class="img-wrapper mb-3">
+								<img class="card-img-top img-fluid mx-auto" src="assets/homepage/service_healthcare_it.png" alt="Service 1">
+							</div>
+							<div class="card-body p-0">
+								<h5 class="card-title soft-black font-weight-bold ff-perpetua">Healthcare IT</h5>
+								<p class="card-text w-75 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, error! Ipsum
+									vero hic
+									iure,
+									veritatis minus vel porro aspernatur eligendi?</p>
+								<div class="card-footer border-0">
+									<a href="#" class="px-4 border-0 ff-perpetua">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card py-3 text-center border-0">
+							<div class="img-wrapper mb-3">
+								<img class="card-img-top img-fluid mx-auto" src="assets/homepage/service_mobile_app.png" alt="Service 1">
+							</div>
+							<div class="card-body p-0">
+								<h5 class="card-title soft-black font-weight-bold ff-perpetua">Mobile Application</h5>
+								<p class="card-text w-75 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, error! Ipsum
+									vero hic
+									iure,
+									veritatis minus vel porro aspernatur eligendi?</p>
+								<div class="card-footer border-0">
+									<a href="#" class="px-4 border-0 ff-perpetua">Learn More</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="text-center mt-3">
+					<a href="#" class="btn px-5 py-2 border-0 ff-perpetua font-weight-bold custom-btn">View All Services</a>
+				</div>
 			</div>
 		</section>
+
+		<section class="section-3 bg-primary position-relative">
+			<img src="assets/homepage/curve_left.png" alt="" class="img-fluid curve curve-left">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 p-5">
+						<div class="outer-wrapper">
+							<div class="wrapper">
+								<h2 class="ff-perpetua font-weight-bold text-light header">Welcome To The Consultant</h2>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, excepturi deleniti. Provident numquam
+									distinctio quisquam quos in, incidunt ipsam at iusto id quidem pariatur et vero? Unde recusandae nisi
+									provident asperiores magni magnam. Odio quod quidem animi harum natus veniam.</p>
+							</div>
+
+							<div class="row my-4">
+								<div class="col-sm-4">
+									<div class="img-wrapper mb-3">
+										<img class="img-fluid mx-auto" src="assets/homepage/consult_1.png" alt="Consultant 1">
+									</div>
+									<h5 class="text-light font-weight-bold ff-perpetua">Timesheets</h5>
+								</div>
+								<div class="col-sm-4">
+									<div class="img-wrapper mb-3">
+										<img class="img-fluid mx-auto" src="assets/homepage/consult_2.png" alt="Consultant 1">
+									</div>
+									<h5 class="text-light font-weight-bold ff-perpetua">Payroll Schedule</h5>
+								</div>
+								<div class="col-sm-4">
+									<div class="img-wrapper mb-3">
+										<img class="img-fluid mx-auto" src="assets/homepage/consult_3.png" alt="Consultant 1">
+									</div>
+									<h5 class="text-light font-weight-bold ff-perpetua">Your Checks</h5>
+								</div>
+							</div>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias totam nulla commodi blanditiis minima impedit
+								recusandae deserunt corporis facere porro!</p>
+
+							<a href="#" class="btn mt-3 px-3 py-2 border-0 ff-perpetua font-weight-bold custom-btn">Get Started Now</a>
+						</div>
+					</div>
+					<div class="col-md-6 p-0">
+						<div id="bg-image"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-4 my-5 py-3">
+			<div class="container">
+				<div class="wrapper mb-5">
+					<h2 class="ff-perpetua font-weight-bold text-center header">STONE Resource Group Instagram</h2>
+					<p class="text-center">Lorem ipsum dolor sit amet.</p>
+				</div>
+
+				<div class="row photos text-center">
+					<div class="col-md-3">
+						<img src="assets/homepage/instagram_1.png" alt="" class="img-fluid">
+					</div>
+					<div class="col-md-3">
+						<img src="assets/homepage/instagram_2.png" alt="" class="img-fluid">
+					</div>
+					<div class="col-md-3">
+						<img src="assets/homepage/instagram_3.png" alt="" class="img-fluid">
+					</div>
+					<div class="col-md-3">
+						<img src="assets/homepage/instagram_4.png" alt="" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</section>
+
 	</main>
 
 	<footer class="pt-5 pb-3">
@@ -119,7 +253,7 @@
 							<li class="text-white mb-2">
 								<span class="fa-li">
 									<i class="fa fa-envelope-o mr-2" aria-hidden="true"></i>
-								</span>class="email"
+								</span>
 								<a href="mailto:atlanta@stoneresource.net">atlanta@stoneresource.net</a>
 							</li>
 							<li class="text-white mb-2">
@@ -147,7 +281,7 @@
 							<li class="text-white mb-2">
 								<span class="fa-li">
 									<i class="fa fa-envelope-o mr-2" aria-hidden="true"></i>
-								</span>class="email"
+								</span>
 								<a href="mailto:atlanta@stoneresource.net">atlanta@stoneresource.net</a>
 							</li>
 							<li class="text-white mb-2">
@@ -175,7 +309,7 @@
 							<li class="text-white mb-2">
 								<span class="fa-li">
 									<i class="fa fa-envelope-o mr-2" aria-hidden="true"></i>
-								</span>class="email"
+								</span>
 								<a href="mailto:atlanta@stoneresource.net">atlanta@stoneresource.net</a>
 							</li>
 							<li class="text-white mb-2">

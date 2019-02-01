@@ -1,0 +1,232 @@
+.home {
+	section.top {
+		position: relative;
+		min-height: 700px;
+		height: 90vh;
+		max-height: 800px;
+		background-image: url("../assets/banners/banner_homepage.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		.wrapper {
+			padding-top: 5%;
+			h5.subheader {
+				font-size: 1.1em;
+			}
+			h1.header {
+				font-family: 'PrivaFourPro', sans-serif;
+				font-size: 3em;
+			}
+			p.blurb {
+				font-size: 0.9em;
+			}
+			a.custom-btn {
+				font-size: 1.5em;
+				color: #fff;
+				background-image: linear-gradient(to right, #6d4c20, #cd9e37 50%, #011f4d 25%, #1896be);
+			}
+		}
+	}
+
+	section.section-1 {
+		position: relative;
+		.wrapper {
+			padding: 70px 0;
+			p {
+				color:#a2b0c1;
+				width: 75%;
+				margin: auto;
+				font-size: 1.1em;
+			}
+		}
+		img.circle-logo {
+			height: 70px;
+			width: 70px;
+			position: absolute;
+			bottom: -40px;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+			background-color: #fff;
+			border-radius: 50%;
+			padding: 6px;
+		}
+		.circle-wrapper {
+			bottom: -70px;
+			left: -80px;
+			span.circle-2 {
+				top: -20px;
+				right: -15px;
+			}
+		}
+	}
+
+	section.section-2 {
+		img.curve-right {
+			position: absolute;
+			right: 0;
+			top: -190px;
+		}
+		margin: 75px auto;
+		h2.header {
+			color: $soft-black;
+		}
+		.card {
+			.img-wrapper {
+				position: relative;
+				background-color: rgba(202, 156, 54, 0.3);
+				border-radius: 50%;
+				width: 130px;
+				height: 130px;
+				margin: auto;
+				img {
+					position: relative;
+					bottom: -10px;
+					padding: 15px;
+				}
+			}
+			.card-body {
+				h5.card-title {
+					font-size: 1.8em;
+				}
+				.card-footer {
+					background-color: #fff;
+					a {
+						font-size: 1.2em;
+						color: $gold;
+					} 
+				}
+			}
+		}
+		a.custom-btn {
+			font-size: 1.3em;
+			color: #fff;
+			background-image: linear-gradient(to right, #011f4d, #1896be 50%, #6d4c20 25%, #cd9e37);
+		}
+	}
+
+	section.section-3 {
+		img.curve-left {
+			position: absolute;
+			left: 0;
+			top: -70px;
+		}
+		h2.header {
+			font-size: 2.4em;
+		}
+		p {
+			color:#a2b0c1;
+		}
+		.img-wrapper {
+			position: relative;
+			background-color: #305176;
+			border-radius: 50%;
+			width: 70px;
+			height: 70px;
+			img {
+				position: relative;
+				right: -5%;
+				bottom: -13%;
+				padding: 5px;
+			}
+		}
+		.outer-wrapper {
+			width: 75%;
+			margin-left: auto;
+			padding: 80px 0;
+		}
+		#bg-image {
+			height: 100%;
+			background-image: url("../assets/homepage/consult_image.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center top;
+		}
+		a.custom-btn {
+			font-size: 1.3em;
+			color: #fff;
+			background-image: linear-gradient(to right, #011f4d, #1896be 50%, #6d4c20 25%, #cd9e37);
+		}
+	}
+
+	section.section-4 {
+		background-color:#fff;
+		color: $soft-black;
+		h2.header {
+			font-size: 2.5em;
+		}
+		.photos {
+			div:nth-child(odd) > img {
+				position: relative;
+				bottom: 20px;
+			}
+		}
+	}
+
+	@media screen and (max-width: $break-lg) {
+		img.curve {
+			display: none;
+		}
+		section.section-3 {
+			.outer-wrapper {
+				width: 100%;
+				margin-left: 0;
+			}
+			#bg-image {
+				background-position: center left;
+			}
+		}
+	}
+	@media screen and (max-width: $break-md) {
+		section.top {
+			max-height: 0;
+		}
+		section.section-1 {
+			.wrapper {
+				p {
+					font-size: 1em;
+					width: 100%;
+				}
+			}
+		}
+		section.section-3 {
+			.img-wrapper {
+				margin: auto;
+				text-align: center;
+			}
+			h5 {
+				text-align: center;
+			}
+		}
+		section.section-4 {
+			.photos {
+				div > img {
+					margin-bottom: 15px;
+				}
+				div:nth-child(odd) > img {
+					position: relative;
+					bottom: 0;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: $break-sm) {
+		section.top {
+			.wrapper {
+				padding-top: 70px;
+				h1.header {
+					font-size: 2em;
+				}
+				p.blurb {
+					padding: 0 10px;
+				}
+			}
+		}
+		a.custom-btn {
+			margin: auto;
+			width: 90%;
+		}
+	}
+
+}
