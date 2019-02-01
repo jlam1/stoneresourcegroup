@@ -54,15 +54,8 @@ header.navbar-main {
 			}
 		}
 	}
-	@media screen and (max-width: $break-xs) {
-		nav {
-			// ul.navbar-nav {
-			// 	min-width: 250px;
-			// 	max-width: 250px;
-			// 	min-height: 100vh;
-			// }
-		}
-	}
+
+
 }
 
 header.navbar-main.on-scroll {

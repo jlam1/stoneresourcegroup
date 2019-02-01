@@ -1,4 +1,5 @@
 .home {
+	margin-top: 0;
 	section.top {
 		position: relative;
 		min-height: 700px;
@@ -9,7 +10,7 @@
 		background-size: cover;
 		background-position: center;
 		.wrapper {
-			padding-top: 5%;
+			padding-top: 125px;
 			h5.subheader {
 				font-size: 1.1em;
 			}
