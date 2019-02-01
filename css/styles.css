@@ -61,6 +61,24 @@ body {
 .color-secondary {
   color: #ca9c36; }
 
+.circle-wrapper {
+  position: absolute; }
+  .circle-wrapper span.circle-1 {
+    height: 160px;
+    width: 160px;
+    top: -70px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgba(202, 156, 54, 0.4); }
+  .circle-wrapper span.circle-2 {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: -20px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: rgba(202, 156, 54, 0.4); }
+
 footer {
   background-color: #032956;
   color: #fff;
@@ -87,29 +105,15 @@ footer {
     text-align: center; }
   footer ul.social-links a:hover i {
     background-color: #032956; }
+  footer .circle-wrapper {
+    top: -70px;
+    right: -80px; }
+    footer .circle-wrapper span.circle-2 {
+      top: -20px;
+      left: -15px; }
   @media screen and (max-width: 992px) {
     footer .footer-bottom {
       display: block !important; } }
-
-.circle-wrapper {
-  position: absolute;
-  top: -70px;
-  right: -80px; }
-  .circle-wrapper span.circle-1 {
-    height: 160px;
-    width: 160px;
-    display: inline-block;
-    border-radius: 50%;
-    background-color: rgba(202, 156, 54, 0.4); }
-  .circle-wrapper span.circle-2 {
-    position: absolute;
-    top: -20px;
-    left: -15px;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    display: inline-block;
-    background-color: rgba(202, 156, 54, 0.4); }
 
 @media screen and (max-width: 768px) {
   .circle-wrapper {
@@ -132,6 +136,13 @@ nav ul.navbar-nav > li.nav-item.active, nav ul.navbar-nav > li.nav-item > a:hove
 
 .soft-black {
   color: #3D4147 !important; }
+
+.home .circle-wrapper {
+  top: -70px;
+  left: -80px; }
+  .home .circle-wrapper span.circle-2 {
+    top: -20px;
+    right: -15px; }
 
 .services h1 {
   font-size: 3em;
