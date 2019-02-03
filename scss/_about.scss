@@ -3,27 +3,30 @@
 		border-bottom: 1px solid $gold;
 		font-size: 2.5em;
 	}
-	.img-wrapper {
-		position: relative;
+	.information {
+		margin: 100px auto;
 		img {
 			position: relative;
-			display: inline-block;
-			z-index: 5;
 		}
-		img:not(.circle-logo) {
-			margin: auto 5px;
+		img.img-left {
+			top: -10px;
 		}
-		img:first-child {
-			bottom: 15px;
-		}
-		img:last-child {
-			top: 15px;
+		img.img-right {
+			bottom: -10px;
 		}
 		img.circle-logo {
 			position: absolute;
-			left: 45%;
-			top: 31%;
+			top: 33%;
 			z-index: 10;
+			max-width: 100px;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+		@media screen and (max-width: $break-md) {
+			img.circle-logo {
+				max-width: 60px;
+			}
 		}
 	}
 
@@ -36,6 +39,25 @@
 			min-width: 300px;
 			p {
 				font-size: 0.9em;
+			}
+		}
+		@media screen and (max-width: $break-lg) {
+			.value-wrapper {
+				min-height: 100%;
+				min-width: 250px;
+			}
+		}
+		@media screen and (max-width: $break-md) {
+			.value-wrapper {
+				border-radius: 0;
+				min-height: 100%;
+			}
+		}
+		@media screen and (max-width: $break-sm) {
+			.value-wrapper {
+				p {
+					font-size: 0.9em;
+				}
 			}
 		}
 	}
@@ -69,76 +91,120 @@
 		background-color: #f3f3f3;
 		.aff-list {
 			display: flex;
-			justify-content: center;
+			flex-wrap: wrap;
 			.aff-wrapper {
+				flex: 1 0 18%;
 				position: relative;
 				.aff {
 					position: relative;
 					margin: 0;
 					display: inline-block;
-					padding: 15px;
-					width: 200px;
-					height: 100px;
+					padding: 25px;
+					border: 1px solid rgba(0, 0, 0, 0.2);
+					transition: all 0.3s ease-in-out;
 
 					img {
+						transition: all 0.3s ease-in-out;
 						height: 100%;
 						width: 100%;
-					}			
+					}
 
 					blockquote {
-						width: 400px;
-						height: 100px;
+						transition: all 0.3s ease-in-out;
+						width: 402px;
+						height: auto;
 						position: absolute;
 						background: #fff;
 						margin: 0;
-						box-shadow: 0px 10px 15px 3px rgba(0, 0, 0, 0.2);
+						// box-shadow: 0px 10px 15px 3px rgba(0, 0, 0, 0.2);
 						color: #717171;
 						font-size: 0.8em;
-						letter-spacing: 1px;
-						line-height: 30px;
-						display: none;
+						// display: none;
+						opacity: 0;
+						visibility: hidden;
 						padding: 15px;
 						z-index: 99;
+
+						h5.name {
+							color: $gold;
+							font-size: 1em;
+						}
 					}
 				}
 				.aff:hover {
 					cursor: pointer;
 					background-color: #fff;
-					box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+					// box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+					border: 1px solid transparent;
+					z-index: 999;
+
+					blockquote{
+						opacity: 1;
+						visibility: visible;
+					}
 				}
-				.aff:hover blockquote{
-					display:block;
+				.aff.active {
+					opacity: 1;
+				}
+				.aff.inactive {
+					opacity: 0.2;
 				}
 			}
+			.aff-wrapper:nth-child(5n+1) {
+				.aff {
+					border-left: 0;
+				}
+			}
+			.aff-wrapper:nth-child(5n) {
+				.aff {
+					border-right: 0;
+				}
+			}
+
+			.aff-wrapper:nth-child(n+1):nth-child(-n+5) {
+				.aff {
+					border-top: 0;
+					border-bottom: 0;
+					border-left: 0;
+				}
+			}
+			.aff-wrapper:nth-child(n+6):nth-child(n-10) {
+				.aff {
+					border-bottom: 0;
+					border-left: 0;
+				}
+			}
+
 			.aff-wrapper:nth-child(n+1):nth-child(-n+3) {
 				.aff {
 					blockquote {
-						bottom: -100px;
-						left: 0;
+						top: 100%;
+						left: 0%;
 					}
 				}
 			}
 			.aff-wrapper:nth-child(n+4):nth-child(-n+5) {
 				.aff {
 					blockquote {
-						bottom: -100px;
-						right: 0;
+						top: 100%;
+						right: 0%;
 					}
 				}
 			}
+			
 			.aff-wrapper:nth-child(n+6):nth-child(-n+8) {
 				.aff {
 					blockquote {
-						top: -100px;
-						left: 0;
+						bottom: 100%;
+						left: 0%;
 					}
 				}
 			}
 			.aff-wrapper:nth-child(n+9):nth-child(-n+10) {
 				.aff {
 					blockquote {
-						top: -100px;
-						right: 0;
+					    bottom: 100%;
+						right: 0%;
 					}
 				}
 			}
@@ -149,25 +215,8 @@
 				font-size: 1.5em;
 			}
 		}
-	}
 
-	@media screen and (max-width: $break-lg) {
-		.values {
-			.value-wrapper {
-				min-height: 100%;
-				min-width: 250px;
-			}
-		}
-	}
-
-	@media screen and (max-width: $break-md) {
-		.values {
-			.value-wrapper {
-				border-radius: 0;
-				min-height: 100%;
-			}
-		}
-		.affiliations {
+		@media screen and (max-width: $break-md) {
 			.aff-list {
 				display: block;
 				.aff-wrapper {
@@ -178,7 +227,6 @@
 						
 						blockquote {
 							margin-top: 15px;
-							
 							display: block;
 							position: relative;
 							top: 0;
@@ -191,14 +239,15 @@
 						background-color: transparent;
 					}
 				}
-		}
-		}
-	}
-	@media screen and (max-width: $break-sm) {
-		.values {
-			.value-wrapper {
-				p {
-					font-size: 0.9em;
+			}
+			.carousel {
+				.carousel-item {
+					.aff-item {
+						width: 75%!important;
+					}
+				}
+				a.carousel-control-prev i.fa, a.carousel-control-next i.fa {
+					font-size: 2.5em;
 				}
 			}
 		}

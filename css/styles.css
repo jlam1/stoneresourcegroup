@@ -470,23 +470,25 @@ footer {
   border-bottom: 1px solid #ca9c36;
   font-size: 2.5em; }
 
-.about .img-wrapper {
-  position: relative; }
-  .about .img-wrapper img {
-    position: relative;
-    display: inline-block;
-    z-index: 5; }
-  .about .img-wrapper img:not(.circle-logo) {
-    margin: auto 5px; }
-  .about .img-wrapper img:first-child {
-    bottom: 15px; }
-  .about .img-wrapper img:last-child {
-    top: 15px; }
-  .about .img-wrapper img.circle-logo {
+.about .information {
+  margin: 100px auto; }
+  .about .information img {
+    position: relative; }
+  .about .information img.img-left {
+    top: -10px; }
+  .about .information img.img-right {
+    bottom: -10px; }
+  .about .information img.circle-logo {
     position: absolute;
-    left: 45%;
-    top: 31%;
-    z-index: 10; }
+    top: 33%;
+    z-index: 10;
+    max-width: 100px;
+    left: 0;
+    right: 0;
+    margin: auto; }
+  @media screen and (max-width: 992px) {
+    .about .information img.circle-logo {
+      max-width: 60px; } }
 
 .about .values .value-wrapper {
   background-color: #fff;
@@ -496,6 +498,20 @@ footer {
   min-width: 300px; }
   .about .values .value-wrapper p {
     font-size: 0.9em; }
+
+@media screen and (max-width: 1200px) {
+  .about .values .value-wrapper {
+    min-height: 100%;
+    min-width: 250px; } }
+
+@media screen and (max-width: 992px) {
+  .about .values .value-wrapper {
+    border-radius: 0;
+    min-height: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .about .values .value-wrapper p {
+    font-size: 0.9em; } }
 
 .about .donations .donate-wrapper {
   position: relative;
@@ -521,84 +537,96 @@ footer {
   background-color: #f3f3f3; }
   .about .affiliations .aff-list {
     display: flex;
-    justify-content: center; }
+    flex-wrap: wrap; }
     .about .affiliations .aff-list .aff-wrapper {
+      flex: 1 0 18%;
       position: relative; }
       .about .affiliations .aff-list .aff-wrapper .aff {
         position: relative;
         margin: 0;
         display: inline-block;
-        padding: 15px;
-        width: 200px;
-        height: 100px; }
+        padding: 25px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out; }
         .about .affiliations .aff-list .aff-wrapper .aff img {
+          transition: all 0.3s ease-in-out;
           height: 100%;
           width: 100%; }
         .about .affiliations .aff-list .aff-wrapper .aff blockquote {
-          width: 400px;
-          height: 100px;
+          transition: all 0.3s ease-in-out;
+          width: 402px;
+          height: auto;
           position: absolute;
           background: #fff;
           margin: 0;
-          box-shadow: 0px 10px 15px 3px rgba(0, 0, 0, 0.2);
           color: #717171;
           font-size: 0.8em;
-          letter-spacing: 1px;
-          line-height: 30px;
-          display: none;
+          opacity: 0;
+          visibility: hidden;
           padding: 15px;
           z-index: 99; }
+          .about .affiliations .aff-list .aff-wrapper .aff blockquote h5.name {
+            color: #ca9c36;
+            font-size: 1em; }
       .about .affiliations .aff-list .aff-wrapper .aff:hover {
         cursor: pointer;
         background-color: #fff;
-        box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2); }
-      .about .affiliations .aff-list .aff-wrapper .aff:hover blockquote {
-        display: block; }
+        border: 1px solid transparent;
+        z-index: 999; }
+        .about .affiliations .aff-list .aff-wrapper .aff:hover blockquote {
+          opacity: 1;
+          visibility: visible; }
+      .about .affiliations .aff-list .aff-wrapper .aff.active {
+        opacity: 1; }
+      .about .affiliations .aff-list .aff-wrapper .aff.inactive {
+        opacity: 0.2; }
+    .about .affiliations .aff-list .aff-wrapper:nth-child(5n+1) .aff {
+      border-left: 0; }
+    .about .affiliations .aff-list .aff-wrapper:nth-child(5n) .aff {
+      border-right: 0; }
+    .about .affiliations .aff-list .aff-wrapper:nth-child(n+1):nth-child(-n+5) .aff {
+      border-top: 0;
+      border-bottom: 0;
+      border-left: 0; }
+    .about .affiliations .aff-list .aff-wrapper:nth-child(n+6):nth-child(n-10) .aff {
+      border-bottom: 0;
+      border-left: 0; }
     .about .affiliations .aff-list .aff-wrapper:nth-child(n+1):nth-child(-n+3) .aff blockquote {
-      bottom: -100px;
-      left: 0; }
+      top: 100%;
+      left: 0%; }
     .about .affiliations .aff-list .aff-wrapper:nth-child(n+4):nth-child(-n+5) .aff blockquote {
-      bottom: -100px;
-      right: 0; }
+      top: 100%;
+      right: 0%; }
     .about .affiliations .aff-list .aff-wrapper:nth-child(n+6):nth-child(-n+8) .aff blockquote {
-      top: -100px;
-      left: 0; }
+      bottom: 100%;
+      left: 0%; }
     .about .affiliations .aff-list .aff-wrapper:nth-child(n+9):nth-child(-n+10) .aff blockquote {
-      top: -100px;
-      right: 0; }
+      bottom: 100%;
+      right: 0%; }
   .about .affiliations .carousel i.fa {
     color: #032956;
     font-size: 1.5em; }
-
-@media screen and (max-width: 1200px) {
-  .about .values .value-wrapper {
-    min-height: 100%;
-    min-width: 250px; } }
-
-@media screen and (max-width: 992px) {
-  .about .values .value-wrapper {
-    border-radius: 0;
-    min-height: 100%; }
-  .about .affiliations .aff-list {
-    display: block; }
-    .about .affiliations .aff-list .aff-wrapper .aff {
-      width: 100%;
-      height: auto;
-      background-color: #fff; }
-      .about .affiliations .aff-list .aff-wrapper .aff blockquote {
-        margin-top: 15px;
-        display: block;
-        position: relative;
-        top: 0;
-        left: 0;
+  @media screen and (max-width: 992px) {
+    .about .affiliations .aff-list {
+      display: block; }
+      .about .affiliations .aff-list .aff-wrapper .aff {
         width: 100%;
-        box-shadow: none; }
-    .about .affiliations .aff-list .aff-wrapper .aff:hover {
-      background-color: transparent; } }
-
-@media screen and (max-width: 768px) {
-  .about .values .value-wrapper p {
-    font-size: 0.9em; } }
+        height: auto;
+        background-color: #fff; }
+        .about .affiliations .aff-list .aff-wrapper .aff blockquote {
+          margin-top: 15px;
+          display: block;
+          position: relative;
+          top: 0;
+          left: 0;
+          width: 100%;
+          box-shadow: none; }
+      .about .affiliations .aff-list .aff-wrapper .aff:hover {
+        background-color: transparent; }
+    .about .affiliations .carousel .carousel-item .aff-item {
+      width: 75% !important; }
+    .about .affiliations .carousel a.carousel-control-prev i.fa, .about .affiliations .carousel a.carousel-control-next i.fa {
+      font-size: 2.5em; } }
 
 .services h1 {
   font-size: 3em;
