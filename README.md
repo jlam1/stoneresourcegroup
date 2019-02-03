@@ -1,2 +1,2 @@
 # stoneresourcegroup
-Stone Resource Group freelance gig
+Stone Resource Group frontend
